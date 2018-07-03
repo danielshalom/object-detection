@@ -28,7 +28,9 @@ img = np.zeros( (512, 512, 3), np.uint8 )
 
 # cap = cv2.VideoCapture( 0 )
 cap = cv2.VideoCapture( 0 )
+print("Select an object to track")
 print( 'click "q" to stop' )
+
 
 
 
