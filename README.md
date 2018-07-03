@@ -1,5 +1,5 @@
-# ML/DL/CV
-with Python
+# ML/DL/CV with Python
+
 
 
 * face recognition with SVM and HOG - Download Data : https://f2h.io/dir/tru4vlr2twja
