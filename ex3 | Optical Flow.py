@@ -1,3 +1,5 @@
+
+
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -26,7 +28,6 @@ def draw_circle (event, x, y, flags, param):
 
 img = np.zeros( (512, 512, 3), np.uint8 )
 
-# cap = cv2.VideoCapture( 0 )
 cap = cv2.VideoCapture( 0 )
 print("Select an object to track")
 print( 'click "q" to stop' )
@@ -40,32 +41,21 @@ old_gray = cv2.cvtColor( old_frame, cv2.COLOR_BGR2GRAY )
 mask = np.zeros_like( old_gray)
 
 
-def de (event, x, y, flags, param):
-	global ix, iy, drawing, mode
-	if event == cv2.EVENT_LBUTTONDOWN:
-		drawing = True
-		ix, iy = x, y
-	return ix, iy
-
-
-
-
 V=1
 while (1):
 
 	ret, frame = cap.read( )
 	frame_gray = cv2.cvtColor( frame, cv2.COLOR_BGR2GRAY )
-	# img = cv2.add( frame, mask )
+
 	img =frame_gray
-	# cv2.namedWindow( 'image' )
-	# cv2.setMouseCallback( 'image', draw_circle )
+
 	cv2.namedWindow( 'image' )
 	cv2.setMouseCallback( 'image', draw_circle )
 	if(drawing):
-		AAA =img
+		fram_img =img
 
 	if cv2.waitKey( 1 ) & 0xff == ord( 'q' ):
-		BBB  = img
+		select_img  = img
 		break
 
 	cv2.imshow( 'image', img )
@@ -73,15 +63,12 @@ cv2.destroyAllWindows( )
 cap.release( )
 
 
-plt.imshow(  AAA,"gray" )
+plt.imshow(  fram_img,"gray" )
 plt.show()
-# cv2.waitKey()
 
-# cv2.imshow( 'BBB', BBB )
-# cv2.waitKey()
 
-delta = np.zeros_like(AAA)
-delta[AAA == 0] =255
+delta = np.zeros_like(fram_img)
+delta[fram_img == 0] =255
 
 
 ret, thresh = cv2.threshold( delta, 0, 255, 0 )
@@ -96,32 +83,32 @@ for i in approx:
 
 plt.imshow(  delta )
 plt.show()
-#cv2.waitKey( )
+
 
 y= kor[0]
 y1= kor[1]
 y2= kor[2]
 y3= kor[3]
 
-plt.imshow(  BBB[ y[1]:y2[1],y[0]:y2[0] ],"gray" )
+plt.imshow(  select_img[ y[1]:y2[1],y[0]:y2[0] ],"gray" )
 plt.show()
-#cv2.waitKey( )
-cho_img = BBB[ y[1]:y2[1],y[0]:y2[0] ]
+
+cho_img = select_img[ y[1]:y2[1],y[0]:y2[0] ]
 
 import cv2
 import numpy as np
 
 
 
-feature_params = dict( maxCorners = 1000,
-                       qualityLevel = 0.01,
+feature_params = dict( maxCorners = 3000,
+                       qualityLevel = 0.001,
                        minDistance = 14,
                        blockSize = 14 )
 
 
-lk_params = dict( winSize  = (7,7),
-                  maxLevel = 2,
-                  criteria = (cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 1000, 0.003))
+lk_params = dict( winSize  = (14,14),
+                  maxLevel = 3,
+                  criteria = (cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 100, 0.03))
 
 
 
@@ -161,8 +148,6 @@ while (1):
 	x, y, w, h = cv2.boundingRect( good_new )
 
 	cv2.rectangle( img, (x, y), (x + w, y + h), (0, 255, 0), 5 )
-	#[y[1]: y2[1], y[0]: y2[0]]
-	#cv2.rectangle( img, (y[1], y2[1]), (y[0], y2[0]), (0, 255, 0), 5 )
 
 	cv2.namedWindow( 'image' )
 	cv2.setMouseCallback( 'image', draw_circle )
