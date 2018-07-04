@@ -141,7 +141,7 @@ while (1):
 			a, b = new.ravel( )
 			a1, b1 = old.ravel( )
 			#mask = cv2.circle( frame, (a1, b1), 5, color[4].tolist( ), -1 )
-			frame = cv2.circle( frame, (a, b), 5, color[i].tolist( ), 2 )
+			frame = cv2.circle( frame, (a, b), 5, color[0].tolist( ), 2 )
 
 	img = cv2.add( frame, mask )
 
