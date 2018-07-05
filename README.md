@@ -8,5 +8,5 @@
   -faces112x92.mat Data for ex2 
 
 * ex3 Optical Flow - Tracking objects
-* Folder Machine learning -
+* Folder Machine learning 
   -Algorithm: gradient descent,Polynomial regression
