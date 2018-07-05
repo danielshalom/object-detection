@@ -9,4 +9,4 @@
 
 * ex3 Optical Flow - Tracking objects
 * Folder Machine learning 
-  -Algorithm: gradient descent,Polynomial regression
+  -Algorithms: gradient descent,Polynomial regression
