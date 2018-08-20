@@ -12,5 +12,7 @@
   -faces112x92.mat Data for ex2 
 
 * ex3 Optical Flow - Tracking objects
+****
+שנפתח הוידאו צריך לבחור עם עכבר אובייקט למעקב
 * Folder Machine learning 
   -Algorithms: gradient descent,Polynomial regression
