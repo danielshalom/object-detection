@@ -15,8 +15,9 @@
 ****
 
 שנפתח הוידאו צריך לבחור עם עכבר אובייקט למעקב
-* Folder Machine learning 
-  -Algorithms: gradient descent,Polynomial regression
+* Folder : Machine learning  ,Computer-vision
+
+  
   ****
   
   צריך ג'ופיטר-נוטבוק בשביל לראות .
