@@ -11,7 +11,7 @@ Personally, I chose to do face recognition but you can try whatever you want, th
 ****
 * ex2 face recognition with SVM and PCA
 
-$ -faces112x92.mat Data for ex2 
+-faces112x92.mat Data for ex2 
 *****
 * ex3 Optical Flow - Tracking objects
 
@@ -19,7 +19,8 @@ $Mark the desired object with your mouse
 *****
 * Folder : Machine learning  ,Computer-vision,Deep learning
 
-$ If you do not seem to see them, download Jupiter Notbook
+ If you do not seem to see them, download Jupiter Notbook
+ 
 My rescue through Anaconda :
 
 https://www.anaconda.com/download/
@@ -30,3 +31,4 @@ https://anaconda.org/anaconda/python
   
  \
   .
+***
