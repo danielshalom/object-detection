@@ -2,9 +2,9 @@
 
 
 
-* ex1 face recognition with SVM and HOG - Download Data : https://f2h.io/dir/tru4vlr2twja
+* ex1 face recognition with SVM and HOG - 
 
- $ It is recommended to work with Data of real people
+ $  Data sets: http://archive.ics.uci.edu/ml/datasets.html
 
 ****
 * ex2 face recognition with SVM and PCA
