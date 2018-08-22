@@ -2,7 +2,7 @@
 
 
 
-*  SVM and HOG - 
+*  SVM and HOG - Real Time
 
 Personally, I chose to do face recognition but you can try whatever you want, this machine will recognize everything
 
@@ -13,7 +13,7 @@ Personally, I chose to do face recognition but you can try whatever you want, th
 
 -faces112x92.mat Data for ex2 
 *****
-* ex3 Optical Flow - Tracking objects
+* ex3 Optical Flow - Tracking objects , Real Time .
 
 $Mark the desired object with your mouse
 *****
