@@ -5,7 +5,7 @@
 *  SVM and HOG - 
 
 Personally, I chose to identify face recognition but you can try whatever you want, this machine will recognize everything
- $  Data sets: http://archive.ics.uci.edu/ml/datasets.html
+   Data sets: http://archive.ics.uci.edu/ml/datasets.html
 
 ****
 * ex2 face recognition with SVM and PCA
