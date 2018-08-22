@@ -18,7 +18,7 @@ For starters.
 *****
 * ex3 Optical Flow - Tracking objects , Real Time .
 
-$Mark the desired object with your mouse
+Mark the desired object with your mouse
 *****
 * Folder : Machine learning  ,Computer-vision,Deep learning
 
@@ -34,4 +34,5 @@ https://anaconda.org/anaconda/python
   
  \
   .
+***
 ***
