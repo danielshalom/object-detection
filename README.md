@@ -24,7 +24,7 @@ $Mark the desired object with your mouse
 
  If you do not seem to see them, download jupyter notebook
  
-My rescue through Anaconda :
+my recommendation through Anaconda :
 
 https://www.anaconda.com/download/
 
