@@ -20,9 +20,9 @@ $Mark the desired object with your mouse
 
 $ If you do not seem to see them, download Jupiter Notbook
 My rescue through Anaconda :
--https://www.anaconda.com/download/
+*https://www.anaconda.com/download/
 -and 
--https://anaconda.org/anaconda/python
+*https://anaconda.org/anaconda/python
   
  \
   .
