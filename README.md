@@ -14,10 +14,11 @@ It is recommended to work with Data of real people
 Mark the desired object with your mouse
 
 * Folder : Machine learning  ,Computer-vision
+ ****
 If you do not seem to see them, download Jupiter Notbook
 My rescue through Anaconda :https://www.anaconda.com/download/
 and 
 https://anaconda.org/anaconda/python
   
-  ****
+ \
   .
