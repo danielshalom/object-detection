@@ -2,11 +2,13 @@
 
 
 
-* ex1 face recognition with SVM and HOG - Download Data : https://f2h.io/dir/tru4vlr2twja #
+* ex1 face recognition with SVM and HOG - Download Data : https://f2h.io/dir/tru4vlr2twja
+
+ $
 ****
 It is recommended to work with Data of real people
-
-* ex2 face recognition with SVM and HOG
+****
+* ex2 face recognition with SVM and PCA
   -faces112x92.mat Data for ex2 
 
 * ex3 Optical Flow - Tracking objects
