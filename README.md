@@ -22,7 +22,7 @@ $Mark the desired object with your mouse
 *****
 * Folder : Machine learning  ,Computer-vision,Deep learning
 
- If you do not seem to see them, download Jupiter Notbook
+ If you do not seem to see them, download jupyter notebook
  
 My rescue through Anaconda :
 
