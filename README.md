@@ -1,4 +1,4 @@
-# ML/DL/CV with Python
+# ML/DL/CV with Python (kernels)
 
 
 
