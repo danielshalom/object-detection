@@ -4,7 +4,7 @@
 
 *  SVM and HOG - Real Time
 
-Personally, I chose to do face recognition but you can try whatever you want, this machine will recognize everything (But you'll need a good data)
+Personally, I chose to do face recognition but you can try whatever you want (But you'll need a good data)
 
 A little tip for SVM. If you want to identify a quantity of objects I would recommend switching to a rbf kernel
 
