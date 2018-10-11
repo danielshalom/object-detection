@@ -68,7 +68,6 @@ cap = cv2.VideoCapture( 0 )
 _, frame = cap.read( )
 
 old_gray = cv2.cvtColor( frame, cv2.COLOR_BGR2GRAY )
-
 frame_data = []
 area = []
 bdika = []
@@ -79,36 +78,23 @@ mask = np.zeros_like( frame )
 while (V):
 	
 	hog.setSVMDetector( sv )
-	
 	_, frame = cap.read( )
 	gray_frame = cv2.cvtColor( frame, cv2.COLOR_BGR2GRAY )
 	
 	rects, weights = hog.detectMultiScale( frame, winStride = (9, 9), scale = 1.05, hitThreshold = 0.8,
 	                                       finalThreshold = 1 )
-	
 	for (x, y, w, h) in rects:
 		cv2.rectangle( frame, (x, y), (x + w, y + h), (0, 0, 255), 7 )
 		j = j + 1
 		if j > 6:
 			j = 0
-	
 	if rects != ():
 		V = 0
 		cv2.imwrite( "new_data/new_%s.jpg" % i, frame[y:y + w, x:x + w] )
-		
-
 		V = 1
 		i = i + 1
-	
 	cv2.imshow( "gray_frame", frame )
-	
 	if cv2.waitKey( 1 ) & 0xff == ord( 'q' ):
 		break
-
 cap.release( )
 cv2.destroyAllWindows( )
-
-
-
-
-
