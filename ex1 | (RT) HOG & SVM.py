@@ -51,19 +51,16 @@ Tfaces = np.float32( np.concatenate( (faces_descriptors, nonfaces_descriptors) )
 
 Tlbl = np.float32( np.concatenate( (lbl, nonlbl) ) )
 Tlbl = np.int32( Tlbl )
-svm = cv2.ml.SVM_create( )
 
+svm = cv2.ml.SVM_create( )
 svm.setType( cv2.ml.SVM_C_SVC )
 # svm.setKernel(cv2.ml.SVM_LINEAR)
 svm.setKernel( 0 )
-
 svm.setTermCriteria( (cv2.TERM_CRITERIA_COUNT, 100, 1e-6) )
-
 svm.train( Tfaces, cv2.ml.ROW_SAMPLE, Tlbl )
 sv = svm.getSupportVectors( )
 rho, alpha, tmp = svm.getDecisionFunction( 0 )
 sv = np.append( -alpha * sv, rho )
-
 hog.setSVMDetector( sv )
 
 cap = cv2.VideoCapture( 0 )
@@ -99,7 +96,7 @@ while (V):
 		V = 0
 		cv2.imwrite( "new_data/new_%s.jpg" % i, frame[y:y + w, x:x + w] )
 		
-		# print("בוצע זיהוי",' .'*j)
+
 		V = 1
 		i = i + 1
 	
