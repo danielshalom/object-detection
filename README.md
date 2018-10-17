@@ -17,7 +17,7 @@
 ***
 
 
-* Folder : Machine learning  ,Computer-vision,Deep learning
+* Folder : Machine learning, Deep learning
 
  If you do not seem to see them, download jupyter notebook
  
