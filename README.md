@@ -1,17 +1,16 @@
 # ML/DL/CV with Python (kernels)
 
 
-
-*  SVM and HOG - Real Time
+* SVM and HOG - Real Time
 
 ****
 * ex2 face recognition with SVM and PCA
 
--faces112x92.mat Data for ex2 
+    faces112x92.mat Data for ex2 
 *****
 * ex3 Optical Flow - Tracking objects , Real Time .
 
-Mark the desired object with your mouse
+    Mark the desired object with your mouse
 
 *****
 ***
