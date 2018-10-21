@@ -3,9 +3,6 @@
 
 * SVM and HOG - Real Time
 
-****
-* ex2 face recognition with SVM and PCA
-
 *****
 * ex3 Optical Flow - Tracking objects , Real Time .
 
