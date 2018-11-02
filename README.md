@@ -9,8 +9,7 @@
     Mark the desired object with your mouse
 
 *****
-***
-***
+
 
 
 * Folder : Machine learning, Deep learning
@@ -26,6 +25,9 @@ and
 https://anaconda.org/anaconda/python
   
 ***
+***
+***
+
 OpenCV: https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_tutorials.html
 
 
