@@ -4,7 +4,7 @@
 * SVM and HOG - Real Time
 
 *****
-* ex3 Optical Flow - Tracking objects , Real Time .
+*  Optical Flow - Tracking objects , Real Time .
 
     Mark the desired object with your mouse
 
