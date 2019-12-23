@@ -1,7 +1,7 @@
 
 
 *****
-*  Optical Flow - Tracking objects , Real Time .
+*  Optical Flow - Tracking objects.
 
     Mark the desired object with your mouse
 
