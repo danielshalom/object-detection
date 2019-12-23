@@ -1,9 +1,4 @@
-# ML/DL/CV with Python (kernels)
-***************************************
 
-***************************************
-
-* SVM and HOG - Real Time
 
 *****
 *  Optical Flow - Tracking objects , Real Time .
