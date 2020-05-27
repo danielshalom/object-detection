@@ -5,8 +5,16 @@
 
     Mark the desired object with your mouse
 
-*****
 
+
+PCA -Beyond a low dimension without losing information
+
+SVM -Classified
+
+HOG -Histogram of oriented gradients, Transformation in data processing.
+
+
+*****
 
 OpenCV: https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_tutorials.html
 
