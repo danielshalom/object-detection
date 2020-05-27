@@ -11,7 +11,7 @@ PCA -Beyond a low dimension without losing information
 
 SVM -Classified
 
-HOG -Histogram of oriented gradients, Transformation in data processing.
+HOG -Histogram of oriented gradients, transformation in data processing.
 
 
 *****
