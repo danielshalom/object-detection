@@ -77,15 +77,11 @@ cap = cv2.VideoCapture( 0 )
 _, frame = cap.read( )
 
 old_gray = cv2.cvtColor( frame, cv2.COLOR_BGR2GRAY )
-frame_data = []
-area = []
-bdika = []
 
 i = 0
-x = 0
 mask = np.zeros_like( frame )
 
-print("Press q for stop"(
+print("Press q for stop")
 while (1):
 	
 	hog.setSVMDetector( sv )
@@ -98,11 +94,10 @@ while (1):
 		cv2.rectangle( frame, (x, y), (x + w, y + h), (0, 0, 255), 7 )
 		j = j + 1
 
-	if rects != ():
-		#save the obejects identified, the errors is very good for the second data.
-		cv2.imwrite( "new_data/new_%s.jpg" % i, frame[y:y + w, x:x + w] )
-		V = 1
-		i = i + 1
+# 	if rects != ():
+# 		#save the obejects identified, the errors is very good for the second data.
+# 		cv2.imwrite( "new_data/new_%s.jpg" % i, frame[y:y + w, x:x + w] )
+# 		i = i + 1
 	cv2.imshow( "gray_frame", frame )
 	
 	if cv2.waitKey( 1 ) & 0xff == ord( 'q' ):
