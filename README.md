@@ -3,15 +3,15 @@
 *****
 *  Optical Flow - https://docs.opencv.org/3.4/d4/dee/tutorial_optical_flow.html ,Tracking objects.
 
-    Mark the desired object with your mouse
+    Mark the object with your mouse.
 
 
 
-PCA - low dimension without losing information
+PCA - low dimension without losing informationd ,data processing
 
 SVM - Classified
 
-HOG - Histogram of oriented gradients, transformation in data processing.
+HOG - Histogram of oriented gradients ,data processing.
 
 
 *****
