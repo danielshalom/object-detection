@@ -11,10 +11,14 @@ blockStride = (3, 3)
 cellSize = (3, 3)
 nbins = 9
 hog = cv2.HOGDescriptor( winSize, blockSize, blockStride, cellSize, nbins )
-fnames = glob( 'faces1\*.JPG' )
+
+#your data, images, what you want detection.
+fnames = glob( 'faces\*.JPG' )
 
 faces_images = []
 faces_descriptors = []
+
+#Tagging the object for SVM, 1.
 lbl = np.ones_like( fnames )
 
 color = np.random.randint( 0, 255, (20, 3) )
@@ -31,7 +35,10 @@ for i, f in enumerate( fnames ):
 	faces_descriptors.append( hog.compute( faces_images[i] ) )
 random.shuffle( faces_descriptors )
 faces_descriptors = np.array( faces_descriptors ).reshape( (len( faces_images ), hog.getDescriptorSize( )) )
-nfnames = glob( 'nonfaces1\*.JPG' )
+
+
+#your  second data, images, any images.       
+nfnames = glob( 'nonfaces\*.JPG' )
 
 nonfaces_images = []
 nonfaces_descriptors = []
@@ -46,6 +53,8 @@ for i1, f1 in enumerate( nfnames ):
 	nonfaces_descriptors.append( hog.compute( nonfaces_images[i1] ) )
 
 nonfaces_descriptors = np.array( nonfaces_descriptors ).reshape( (len( nonfaces_images ), hog.getDescriptorSize( )) )
+
+#Tagging the another object for SVM, -1.
 nonlbl = -1 * np.ones( len( nonfaces_images ) )
 Tfaces = np.float32( np.concatenate( (faces_descriptors, nonfaces_descriptors) ) )
 
@@ -71,11 +80,13 @@ old_gray = cv2.cvtColor( frame, cv2.COLOR_BGR2GRAY )
 frame_data = []
 area = []
 bdika = []
-V = 1
+
 i = 0
 x = 0
 mask = np.zeros_like( frame )
-while (V):
+
+print("Press q for stop"(
+while (1):
 	
 	hog.setSVMDetector( sv )
 	_, frame = cap.read( )
@@ -86,14 +97,14 @@ while (V):
 	for (x, y, w, h) in rects:
 		cv2.rectangle( frame, (x, y), (x + w, y + h), (0, 0, 255), 7 )
 		j = j + 1
-		if j > 6:
-			j = 0
+
 	if rects != ():
-		V = 0
+		#save the obejects identified, the errors is very good for the second data.
 		cv2.imwrite( "new_data/new_%s.jpg" % i, frame[y:y + w, x:x + w] )
 		V = 1
 		i = i + 1
 	cv2.imshow( "gray_frame", frame )
+	
 	if cv2.waitKey( 1 ) & 0xff == ord( 'q' ):
 		break
 cap.release( )
