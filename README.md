@@ -1,7 +1,7 @@
 
 PCA -Principal Components Analysis. Move to low dimension without losing information, data processing.
 
-SVM - Classified, ML.
+SVM - Support Vector Machines, Classified, ML.
 
 HOG - Histogram of oriented gradients, data processing.
 
