@@ -1,3 +1,6 @@
+#HOG to SVM
+#SVM,  Linear Kernel-classified True or False.
+
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -95,7 +98,7 @@ while (1):
 		j = j + 1
 
 # 	if rects != ():
-# 		#save the obejects identified, the errors is very good for the second data.
+# 		#save results. True recognition in faces folder and False recognition in faces until perfect recognition.
 # 		cv2.imwrite( "new_data/new_%s.jpg" % i, frame[y:y + w, x:x + w] )
 # 		i = i + 1
 	cv2.imshow( "gray_frame", frame )
